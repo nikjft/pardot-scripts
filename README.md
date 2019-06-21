@@ -27,8 +27,7 @@ EXAMPLE:
 <iframe src="https://www.other-domain.com/contentpage.html" width="100%" height="500" type="text/html" frameborder="0" allowTransparency="true" style="border: 0;"></iframe>
 </noscript>
 
-<script type="text/javascript" src="easyFrame.js"></script>
-`
+<script type="text/javascript" src="easyFrame.js"></script>`
 
 You will also need to add the iframe content window script before the closing <body> tag 
 on the iframe-embedded page:
