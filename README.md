@@ -35,3 +35,7 @@ on the iframe-embedded page:
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.1.1/iframeResizer.contentWindow.min.js"></script>
 
 For more help with the iframeResizer script and its options: https://github.com/davidjbradshaw/iframe-resizer
+
+# Variable Content.js
+
+I have this set up as dynamic content in Pardot. This takes Pardot variables identifying the visitor and passes them to the dataLayer for Google Tag Manager (or other scripts) to access. Useful for tracking, segmenting analytics traffic, and personalizing pages. Probably not entirely GDPR compliant.
