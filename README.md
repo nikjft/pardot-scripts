@@ -15,7 +15,7 @@ This script leverages [David Bradshaw's iframeResizer library](https://github.co
 
 **USAGE**
 
-Create your frame within a <noscript> tag that has the class "ns-responsive-frame". It's fine if there is other markup within your noscript tag and if there's any styling or attributes on the <iframe> tag itself - these will (mostly) be maintained.
+Paste your frame code within a <noscript> tag that has the class "ns-responsive-frame". It's fine if there is other markup within your noscript tag and if there's any styling or attributes on the <iframe> tag itself - these will (mostly) be maintained.
 
 Add the script anywhere on the page after the <noscript> close tag. (Much of it is asynchronous, so it shouldn't slow down page load if it's before the end, and that will ensure the frame loads sooner.)
 
