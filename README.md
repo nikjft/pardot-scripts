@@ -13,7 +13,7 @@ This script leverages [David Bradshaw's iframeResizer library](https://github.co
 - The iframeResizer.js script will be loaded asynchronously to ensure quickest possible page response
 - Browsers without JavaScript support will load the frame in the <noscript> as per usual
 
-USAGE
+**USAGE**
 
 Create your frame within a <noscript> tag that has the class "ns-responsive-frame". It's fine if there is other markup within your noscript tag and if there's any styling or attributes on the <iframe> tag itself - these will (mostly) be maintained.
 
@@ -21,17 +21,17 @@ Add the script anywhere on the page after the <noscript> close tag. (Much of it 
 
 This script will not run on multiple frames - only the first noscript.ns-responsive-frame will be affected.
 
-EXAMPLE:
+**EXAMPLE**
 
-`<noscript class="ns-responsive-frame">
-<iframe src="https://www.other-domain.com/contentpage.html" width="100%" height="500" type="text/html" frameborder="0" allowTransparency="true" style="border: 0;"></iframe>
-</noscript>
-
-<script type="text/javascript" src="easyFrame.js"></script>`
+    <noscript class="ns-responsive-frame">
+    <iframe src="https://www.other-domain.com/contentpage.html" width="100%" height="500" type="text/html" frameborder="0" allowTransparency="true" style="border: 0;"></iframe>
+    </noscript>
+    
+    <script type="text/javascript" src="easyFrame.js"></script>`
 
 You will also need to add the iframe content window script before the closing <body> tag 
 on the iframe-embedded page:
 
-`<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.1.1/iframeResizer.contentWindow.min.js"></script>`
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.1.1/iframeResizer.contentWindow.min.js"></script>
 
 For more help with the iframeResizer script and its options: https://github.com/davidjbradshaw/iframe-resizer
