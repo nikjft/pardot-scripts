@@ -114,7 +114,7 @@ function initFrame() {
 	// Pull frame out of <noscript> tag with ".ns-responsive.frame" class
 
 	ns = document.querySelector('noscript.ns-responsive-frame');
-	fs = ns.innerHTML.match(/<iframe.+<\/iframe>/i)[0];
+	fs = ns.innerText.match(/<iframe.+<\/iframe>/i)[0];
 	fn = document.createRange().createContextualFragment(fs).firstChild;
 
 	try {
